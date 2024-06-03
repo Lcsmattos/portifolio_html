@@ -146,12 +146,13 @@
         <h2 class="titulo">Fale<span> Comigo</span></h2>
 
         <form action="" method="post" id="contato">
-          <input type="text" id="nome" name="nome" placeholder="Nome" required>
-          <input type="text" id="email" name="email"  placeholder="Email" required>
-          <input type="text" id="celular" name="celular"  placeholder="celular">
-          <textarea placeholder="Sua mensagem" name="mensagem"  id="mensagem" required></textarea>
+          <input type="text" id="nome" name="nome" placeholder="Nome" disabled>
+          <input type="text" id="email" name="email"  placeholder="Email" disabled>
+          <input type="text" id="celular" name="celular"  placeholder="celular" disabled>
+          <textarea placeholder="Sua mensagem" name="mensagem" id="mensagem" disabled></textarea>
 
-          <div class="btn-enviar"><input type="submit" id="btn-enviar" value="ENVIAR"></div>
+          <div class="btn-enviar"><input type="submit" id="btn-enviar" value="ENVIAR" disabled ></div>
+          <h3>*Sessão Temporariamente desabilitada</h3>
         </form>
       </div>
     </section>

@@ -36,8 +36,7 @@ body {
   transition: 0.2s;
 }
 
-button:hover,
-form .btn-enviar input:hover {
+button:hover {
   box-shadow: 0px 0px 8px #00ff08;
   transform: scale(1.1);
 }
@@ -369,7 +368,7 @@ form textarea {
 }
 
 form input::placeholder {
-  color: #fff;
+  color: #3c3c3c; /*#fff*/
 }
 
 form textarea {
@@ -384,11 +383,17 @@ form .btn-enviar {
 }
 
 form .btn-enviar input {
-  background-color: #00ff08;
+  background-color: #7d7d7d; /*#00ff08*/
   color: #000;
   font-weight: 700;
-  cursor: pointer;
-  transition: 0.2s;
+  /* cursor: pointer; */
+  /* transition: 0.2s; */
+}
+
+form h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 /* Estilo do Rodapé*/
