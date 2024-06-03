@@ -1,0 +1,498 @@
+/* Estilo Geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #222222;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00ff08;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+  box-shadow: 0px 0px 8px #00ff08;
+  transform: scale(1.1);
+}
+
+h2.titulo {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.titulo span {
+  color: #00ff08;
+}
+
+/* Estilo do Header */
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+header a:hover {
+  color: #7d7d7d;
+  transform: scale(1.1);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+header .flex {
+  flex-direction: column;
+}
+
+header .flex select {
+  background-color: #00000032;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+}
+/* Estilo do Main Topo do Site */
+
+section.topo-do-site {
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site .txt-topo-site h1 {
+  color: #fff;
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+  color: #00ff08;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: #fff;
+  margin: 40px 0;
+  text-align: justify;
+}
+
+.topo-do-site .txt-topo-site p span {
+  color: #00ff08;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: -30px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/* Estilo do Main Especialidades*/
+
+section.especialidades {
+  padding: 40px 4%;
+}
+
+section.especialidades .flex {
+  gap: 60px;
+}
+
+.especialidades .especialidades-box {
+  color: #fff;
+  padding: 40px;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.2s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.especialidades .especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff6e;
+}
+
+.especialidades .especialidades-box i {
+  font-size: 70px;
+  color: #00ff08;
+}
+
+.especialidades .especialidades-box h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.especialidades .especialidades-box p {
+  text-align: justify;
+}
+
+/* Estilo do Main Sobre*/
+
+section.sobre {
+  padding: 100px 4%;
+}
+
+section.sobre .img-sobre img {
+  border: 2px solid #00ff08;
+  border-radius: 20px;
+  width: 350px;
+  height: 450px;
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre .txt-sobre {
+  color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+  color: #00ff08;
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.btn-social button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00ff08;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.2s;
+}
+
+/* Estilo downloadCV */
+
+section.download-cv .interface {
+  padding: 60px 0 100px 0;
+}
+
+section.download-cv .flex {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.download-cv h2 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+section.download-cv h2 span {
+  color: #00ff08;
+}
+
+section.download-cv .btn-idioma {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-idioma a {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-idioma button {
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #00ff08;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 15px;
+  transition: 0.2s;
+  flex: 1;
+}
+
+.btn-idioma button:hover {
+  box-shadow: 0px 0px 8px #00ff08;
+  transform: scale(1.05);
+}
+
+/* Estilo do Main Portifolio*/
+
+section.portifolio {
+  padding: 80px 4%;
+  box-shadow: 0px 0px 40px 15px #ffffff15;
+}
+
+section.portifolio .flex {
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-color: #00ff08;
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 8s;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+  margin: 0 10px;
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b8;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+/* Estilo do Main Formulario*/
+
+section.formulario {
+  padding: 100px 4%;
+  box-shadow: 0px 0px 40px 15px #ffffff15;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: #00000032;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+form input::placeholder {
+  color: #fff;
+}
+
+form textarea {
+  resize: none;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+form .btn-enviar {
+  text-align: center;
+  margin-top: 10px;
+}
+
+form .btn-enviar input {
+  background-color: #00ff08;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Estilo do Rodapé*/
+
+footer {
+  padding: 30px 4%;
+  box-shadow: 40px 15px 0 0 #ffffff15;
+}
+
+footer .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .line-footer {
+  align-items: center;
+  justify-content: center;
+}
+
+.borda {
+  border-top: 2px solid #00ff08;
+  padding: 20px 0;
+}
+
+footer .line-footer p i {
+  color: #00ff08;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+footer .line-footer p a {
+  color: #fff;
+}
+
+@media screen and (max-width: 1020px) {
+  /* classes gerais */
+  .flex {
+    flex-direction: column;
+  }
+
+  /* cabeçalho */
+  header > .interface {
+    justify-content: space-around;
+  }
+
+  header a {
+    margin: 15px 0;
+  }
+
+  .menu-desktop {
+    width: 400px;
+  }
+
+  /* Portifolio */
+
+  section.portifolio .flex {
+    align-items: center;
+    gap: 60px;
+  }
+
+  .borda {
+    margin-top: 30px;
+  }
+
+  /* Sobre */
+
+  .sobre .txt-sobre h2 {
+    text-align: center;
+    font-size: 33px;
+  }
+
+  /* Download */
+
+  section.download-cv .btn-idioma {
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  .btn-idioma button {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+
+  .btn-idioma a {
+    width: 100%;
+  }
+
+  section.download-cv h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  /* cabeçalho */
+  header > .interface {
+    justify-content: space-around;
+  }
+
+  header a {
+    margin: 10px 0;
+  }
+
+  .menu-desktop {
+    width: 200px;
+  }
+}
