@@ -51,6 +51,24 @@ h2.titulo span {
   color: #00ff08;
 }
 
+.efeito-txt-topo,
+.efeito-img-topo,
+.titulo,
+.efeito-especialidades-1,
+.efeito-especialidades-2,
+.efeito-especialidades-3,
+.efeito-img-sobre,
+.efeito-txt-sobre,
+.efeito-download-btn,
+.efeito-input-1,
+.efeito-input-2,
+.efeito-input-3,
+.efeito-input-4,
+.efeito-input-5,
+.efeito-disable-txt {
+  visibility: hidden;
+}
+
 /* Estilo do Header */
 
 header {
@@ -98,7 +116,7 @@ header .flex select {
 /* Estilo do Main Topo do Site */
 
 section.topo-do-site {
-  padding: 40px 4%;
+  padding: 100px 4%;
 }
 
 section.topo-do-site .flex {
@@ -144,7 +162,7 @@ section.topo-do-site .flex {
 /* Estilo do Main Especialidades*/
 
 section.especialidades {
-  padding: 40px 4%;
+  padding: 100px 4%;
 }
 
 section.especialidades .flex {
@@ -234,7 +252,7 @@ section.sobre .flex {
 /* Estilo downloadCV */
 
 section.download-cv .interface {
-  padding: 60px 0 100px 0;
+  padding: 100px 0;
 }
 
 section.download-cv .flex {
