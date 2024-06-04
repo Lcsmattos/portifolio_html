@@ -46,14 +46,12 @@ revelar.reveal('.efeito-especialidades-3', {
 revelar.reveal('.efeito-img-sobre', {
   duration: 2000,
   distance: '90px',
-  origin: 'right',
   delay: 500
 })
 
 revelar.reveal('.efeito-txt-sobre', {
   duration: 2000,
   distance: '90px',
-  origin: 'left',
   delay: 1000
 })
 
